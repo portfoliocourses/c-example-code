@@ -4,7 +4,7 @@
 * 
 * Description: An example of how to sum the values in an array.
 *
-* Author: Kevin Browne @ https://portfoliocourses.com
+* Author: Kevin Browne @ https://portfoliocourses.com 
 *
 *******************************************************************************/
 #include <stdio.h>
