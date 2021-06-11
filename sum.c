@@ -4,6 +4,8 @@
 * 
 * Description: An example of how to sum the values in an array.
 *
+* YouTube Lesson: https://www.youtube.com/watch?v=AhAz6cOl_DA
+*
 * Author: Kevin Browne @ https://portfoliocourses.com
 *
 *******************************************************************************/
