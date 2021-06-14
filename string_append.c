@@ -10,6 +10,8 @@
 * function provided here will work by creating a new string on the heap and 
 * storing the result of the append there.
 *
+* YouTube Lesson: https://www.youtube.com/watch?v=_7GPPMQvO84
+*
 * Author: Kevin Browne @ https://portfoliocourses.com
 *
 *******************************************************************************/
