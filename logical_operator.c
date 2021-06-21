@@ -4,7 +4,7 @@
 * 
 * Description: Examples of logical operators in C.
 *
-* YouTube Lesson: https://www.youtube.com/watch?v=r0OuA1Q8jOo
+* YouTube Lesson: https://www.youtube.com/watch?v=U19kiynYopE
 *
 * Author: Kevin Browne @ https://portfoliocourses.com
 *
@@ -62,6 +62,3 @@ int main(void)
 
   return 0;
 }
-
-
-
