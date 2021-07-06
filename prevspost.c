@@ -1,8 +1,8 @@
 /*******************************************************************************
 *
-* Program: Pre vs post fix increment
+* Program: Prefix vs postfix increment
 * 
-* Description: Example of pre vs post fix increment in C.
+* Description: Example of prefix vs postfix increment in C.
 *
 * YouTube Lesson: https://www.youtube.com/watch?v=VWxWYm9Noww
 *
