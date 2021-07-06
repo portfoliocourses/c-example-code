@@ -4,7 +4,7 @@
 * 
 * Description: Examples of working with 2D arrays in C.
 *
-* YouTube Lesson: https://www.youtube.com/watch?v=cJybIb_JvuY 
+* YouTube Lesson: https://www.youtube.com/watch?v=ZUPfWzTlPbE
 *
 * Author: Kevin Browne @ https://portfoliocourses.com
 *
