@@ -2,7 +2,7 @@
 *
 * Program: Dot product
 * 
-* Description: Example of how to to compute a dot product in C.
+* Description: Example of how to compute a dot product in C.
 *
 * YouTube Lesson: https://www.youtube.com/watch?v=cJybIb_JvuY 
 *
