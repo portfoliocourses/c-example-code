@@ -4,7 +4,7 @@
 * 
 * Description: Example of using File I/O in C.
 *
-* YouTube Lesson: https://www.youtube.com/watch?v=vr7qCQLrUt8 
+* YouTube Lesson: https://www.youtube.com/watch?v=HQNsriyMhtY 
 *
 * Author: Kevin Browne @ https://portfoliocourses.com
 *
