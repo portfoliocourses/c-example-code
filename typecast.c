@@ -4,7 +4,7 @@
 * 
 * Description: Example of how to use type casting in C.
 *
-* YouTube Lesson: https://www.youtube.com/watch?v=R0qIYWo8igs 
+* YouTube Lesson: https://www.youtube.com/watch?v=xKOPZ4mEH3I  
 *
 * Author: Kevin Browne @ https://portfoliocourses.com
 *
