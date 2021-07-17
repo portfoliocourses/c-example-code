@@ -4,7 +4,7 @@
 * 
 * Description: Examples of variable scope in C.
 *
-* YouTube Lesson: https://www.youtube.com/watch?v=qwM_c3gF2lw 
+* YouTube Lesson: https://www.youtube.com/watch?v=IVJoByfBcZs  
 *
 * Author: Kevin Browne @ https://portfoliocourses.com
 *
