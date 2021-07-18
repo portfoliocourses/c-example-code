@@ -5,7 +5,7 @@
 * Description: Examples of pointer notation and arithmetic in contrast to array 
 * notation in C.
 *
-* YouTube Lesson: https://www.youtube.com/watch?v=R0qIYWo8igs 
+* YouTube Lesson: https://www.youtube.com/watch?v=hWGYBMO553A
 *
 * Author: Kevin Browne @ https://portfoliocourses.com
 *
