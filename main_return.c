@@ -4,7 +4,7 @@
 * 
 * Description: Examples of main return values in C.
 *
-* YouTube Lesson: https://www.youtube.com/watch?v=CBfhcRQVpf8 
+* YouTube Lesson: https://www.youtube.com/watch?v=CBfhcRQVpf8
 *
 * Author: Kevin Browne @ https://portfoliocourses.com
 *
