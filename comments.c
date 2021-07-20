@@ -4,7 +4,7 @@
 * 
 * Description: Examples of using comments in C.
 *
-* YouTube Lesson: https://www.youtube.com/watch?v=R0qIYWo8igs 
+* YouTube Lesson: https://www.youtube.com/watch?v=BxoE2Qb1KVA 
 *
 * Author: Kevin Browne @ https://portfoliocourses.com
 *
