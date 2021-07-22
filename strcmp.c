@@ -4,7 +4,7 @@
 * 
 * Description: An example of using the strcmp function in C.
 *
-* YouTube Lesson: https://www.youtube.com/watch?v=R0qIYWo8igs 
+* YouTube Lesson: https://www.youtube.com/watch?v=Vx3GyTVFcMA 
 *
 * Author: Kevin Browne @ https://portfoliocourses.com
 *
