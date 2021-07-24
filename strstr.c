@@ -4,7 +4,7 @@
 * 
 * Description: Example of using the strstr function in C.
 *
-* YouTube Lesson: https://www.youtube.com/watch?v=R0qIYWo8igs 
+* YouTube Lesson: https://www.youtube.com/watch?v=V32VSYVd1Ro 
 *
 * Author: Kevin Browne @ https://portfoliocourses.com
 *
