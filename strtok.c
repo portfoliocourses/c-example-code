@@ -5,7 +5,7 @@
 * Description: A demonstration of the strtok function in C that allows us to 
 * split a string into several strings based on delimeters.
 *
-* YouTube Lesson: https://www.youtube.com/watch?v=R0qIYWo8igs 
+* YouTube Lesson: https://www.youtube.com/watch?v=nrO_pXGZc3Y 
 *
 * Author: Kevin Browne @ https://portfoliocourses.com
 *
