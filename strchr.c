@@ -4,7 +4,7 @@
 * 
 * Description: A demonstration of the strchr() function in C.
 *
-* YouTube Lesson: https://www.youtube.com/watch?v=R0qIYWo8igs 
+* YouTube Lesson: https://www.youtube.com/watch?v=uLgdmGVmEUI 
 *
 * Author: Kevin Browne @ https://portfoliocourses.com
 *
