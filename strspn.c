@@ -4,7 +4,7 @@
 * 
 * Description: Example of using strspn function in C.
 *
-* YouTube Lesson: https://www.youtube.com/watch?v=R0qIYWo8igs 
+* YouTube Lesson: https://www.youtube.com/watch?v=wWG3HxHrl4 
 *
 * Author: Kevin Browne @ https://portfoliocourses.com
 *
