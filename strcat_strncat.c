@@ -4,7 +4,7 @@
 * 
 * Description: A demonstration of using the string concatenation functions in C.
 *
-* YouTube Lesson: https://www.youtube.com/watch?v=R0qIYWo8igs 
+* YouTube Lesson: https://www.youtube.com/watch?v=40yPiMCgixY 
 *
 * Author: Kevin Browne @ https://portfoliocourses.com
 *
