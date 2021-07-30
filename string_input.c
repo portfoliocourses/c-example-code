@@ -4,7 +4,7 @@
 * 
 * Description: Examples of how to accept user input strings with spaces in C.
 *
-* YouTube Lesson: https://www.youtube.com/watch?v=R0qIYWo8igs 
+* YouTube Lesson: https://www.youtube.com/watch?v=f8589Y9LHHg 
 *
 * Author: Kevin Browne @ https://portfoliocourses.com
 *
