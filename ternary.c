@@ -4,7 +4,7 @@
 * 
 * Description: Examples of how to use the ternary operator in C.
 *
-* YouTube Lesson: https://www.youtube.com/watch?v=R0qIYWo8igs 
+* YouTube Lesson: https://www.youtube.com/watch?v=nWvk4fPJu1U 
 *
 * Author: Kevin Browne @ https://portfoliocourses.com
 *
