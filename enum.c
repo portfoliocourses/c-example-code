@@ -4,7 +4,7 @@
 * 
 * Description: Example of using enum in C.
 *
-* YouTube Lesson: https://www.youtube.com/watch?v=vr7qCQLrUt8 
+* YouTube Lesson: https://www.youtube.com/watch?v=oQFN_oi7k3E 
 *
 * Author: Kevin Browne @ https://portfoliocourses.com
 *
