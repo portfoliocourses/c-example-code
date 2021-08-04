@@ -6,7 +6,7 @@
 * allows us to copy a block of data located at an address in memory to another 
 * address in memory.
 *
-* YouTube Lesson: https://www.youtube.com/watch?v=R0qIYWo8igs 
+* YouTube Lesson: https://www.youtube.com/watch?v=yoa_mMmvlMc
 *
 * Author: Kevin Browne @ https://portfoliocourses.com
 *
