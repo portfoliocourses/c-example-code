@@ -4,7 +4,7 @@
 * 
 * Description: Example of how to use memset in C.
 *
-* YouTube Lesson: https://www.youtube.com/watch?v=R0qIYWo8igs 
+* YouTube Lesson: https://www.youtube.com/watch?v=Njsn5HAnAnk 
 *
 * Author: Kevin Browne @ https://portfoliocourses.com
 *
