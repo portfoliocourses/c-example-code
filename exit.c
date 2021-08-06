@@ -4,7 +4,7 @@
 * 
 * Description: Examples of using the exit() function in C.
 *
-* YouTube Lesson: https://www.youtube.com/watch?v=R0qIYWo8igs 
+* YouTube Lesson: https://www.youtube.com/watch?v=8RucxSeAemw 
 *
 * Author: Kevin Browne @ https://portfoliocourses.com
 *
