@@ -4,7 +4,7 @@
 * 
 * Description: Examples of using the time library in C.
 *
-* YouTube Lesson: https://www.youtube.com/watch?v=R0qIYWo8igs 
+* YouTube Lesson: https://www.youtube.com/watch?v=Qoed2uBwF_o 
 *
 * Author: Kevin Browne @ https://portfoliocourses.com
 *
