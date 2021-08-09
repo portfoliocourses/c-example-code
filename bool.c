@@ -4,7 +4,7 @@
 * 
 * Description: Examples of using boolean values in C.
 *
-* YouTube Lesson: https://www.youtube.com/watch?v=R0qIYWo8igs 
+* YouTube Lesson: https://www.youtube.com/watch?v=TFWV3Q5W76M
 *
 * Author: Kevin Browne @ https://portfoliocourses.com
 *
