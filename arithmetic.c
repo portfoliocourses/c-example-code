@@ -4,7 +4,7 @@
 * 
 * Description: Examples of arithmetic operations in C.
 *
-* YouTube Lesson: https://www.youtube.com/watch?v=R0qIYWo8igs 
+* YouTube Lesson: https://www.youtube.com/watch?v=v7r9LD6oIYA 
 *
 * Author: Kevin Browne @ https://portfoliocourses.com
 *
