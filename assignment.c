@@ -4,7 +4,7 @@
 * 
 * Description: Examples of how to use assignment operators in C.
 *
-* YouTube Lesson: https://www.youtube.com/watch?v=R0qIYWo8igs 
+* YouTube Lesson: https://www.youtube.com/watch?v=a2cbw2jkyMA 
 *
 * Author: Kevin Browne @ https://portfoliocourses.com
 *
