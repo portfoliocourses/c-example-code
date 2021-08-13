@@ -4,7 +4,7 @@
 * 
 * Description: Example of us the div function in C.
 *
-* YouTube Lesson: https://www.youtube.com/watch?v=R0qIYWo8igs 
+* YouTube Lesson: https://www.youtube.com/watch?v=HwIFm7rKxCk 
 *
 * Author: Kevin Browne @ https://portfoliocourses.com
 *
