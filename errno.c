@@ -4,7 +4,7 @@
 * 
 * Description: Example of error handling in C.
 *
-* YouTube Lesson: https://www.youtube.com/watch?v=R0qIYWo8igs 
+* YouTube Lesson: https://www.youtube.com/watch?v=OOuZLI5ingc 
 *
 * Author: Kevin Browne @ https://portfoliocourses.com
 *
