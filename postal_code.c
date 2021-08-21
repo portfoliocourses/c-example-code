@@ -12,7 +12,7 @@
 * library to help with this.  We use strlen from string library to help check 
 * for the string length.
 *
-* YouTube Lesson: https://www.youtube.com/watch?v=R0qIYWo8igs 
+* YouTube Lesson: https://www.youtube.com/watch?v=Pe8LRt5bcaI 
 *
 * Author: Kevin Browne @ https://portfoliocourses.com
 *
