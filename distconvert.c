@@ -10,7 +10,7 @@
 * the step value for each conversion, until the next value to be converted is 
 * past the end value.  Values are output with 4 digits of precision.
 *
-* YouTube Lesson: https://www.youtube.com/watch?v=R0qIYWo8igs 
+* YouTube Lesson: https://www.youtube.com/watch?v=L5en1y4BBQg 
 *
 * Author: Kevin Browne @ https://portfoliocourses.com
 *
