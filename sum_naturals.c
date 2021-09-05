@@ -31,7 +31,8 @@ int main()
   // help us solve the larger problem!
   
   printf("%d\n", sum(5) );
-
+  
+  return 0;
 }
 
 // computes the sum of the first n natural numbers recursively
