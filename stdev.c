@@ -1,6 +1,6 @@
 /*******************************************************************************
 *
-* Program: Standar deviaton demonstration
+* Program: Standard deviaton demonstration
 * 
 * Description: Example of calculating standard deviation in C.
 *
