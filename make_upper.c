@@ -4,7 +4,7 @@
 * 
 * Description: Example of making all letters in a string uppercase in C.
 *
-* YouTube Lesson: https://www.youtube.com/watch?v=_8iq-iTh-Ns 
+* YouTube Lesson: https://www.youtube.com/watch?v=HJupPQVx2QI 
 *
 * Author: Kevin Browne @ https://portfoliocourses.com
 *
