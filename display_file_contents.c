@@ -4,7 +4,7 @@
 * 
 * Description: Example of reading and printing a file's contents in C.
 *
-* YouTube Lesson: https://www.youtube.com/watch?v=R0qIYWo8igs 
+* YouTube Lesson: https://www.youtube.com/watch?v=fLPqn026DaE 
 *
 * Author: Kevin Browne @ https://portfoliocourses.com
 *
