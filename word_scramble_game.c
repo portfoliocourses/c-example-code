@@ -2,9 +2,10 @@
 *
 * Program: Word Scramble Game
 * 
-* Description: A word scramble guessing game implemented in C.  The scramble
-* function here is notably sophisticated to other examples found online, I had
-* fun trying to take it a bit further.  :-)
+* Description: A word scramble guessing game implemented in C.  The 
+* implementation includes a word scrambler function that's a bit more 
+* sophisticated than most implementations found online in that ensures the word 
+* is sufficiently scrambled. 
 *
 * YouTube Lesson: https://www.youtube.com/watch?v=loa5eBDONHw 
 *
