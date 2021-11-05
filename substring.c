@@ -4,7 +4,7 @@
 * 
 * Description: Example of a substring function implementation in C.
 *
-* YouTube Lesson: https://www.youtube.com/watch?v=dgYf_4N87a4
+* YouTube Lesson: https://www.youtube.com/watch?v=0X2oYHzvw0g 
 *
 * Author: Kevin Browne @ https://portfoliocourses.com
 *
