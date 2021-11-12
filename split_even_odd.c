@@ -8,7 +8,7 @@
 * efficient and creates arrays that are exactly large enough to store the 
 * even and odd values.
 *
-* YouTube Lesson: https://www.youtube.com/watch?v=CK7Xue5Y9Kw 
+* YouTube Lesson: https://www.youtube.com/watch?v=9r3WX0mDG4o 
 *
 * Author: Kevin Browne @ https://portfoliocourses.com
 *
