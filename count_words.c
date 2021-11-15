@@ -1,8 +1,8 @@
 /*******************************************************************************
 *
-* Program: Bool values demonstration
+* Program: Count The Words In A String
 * 
-* Description: Examples of using boolean values in C.
+* Description: Example counting the number of words in a string in C.
 *
 * YouTube Lesson: https://www.youtube.com/watch?v=JpquiHExpfI 
 *
