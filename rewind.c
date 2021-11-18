@@ -2,7 +2,7 @@
 *
 * Program: rewind() function
 * 
-* Description: Examples of arithmetic operations in C.
+* Description: Example of using the rewind() function in C.
 *
 * YouTube Lesson: https://www.youtube.com/watch?v=btq2nirO6f8 
 *
