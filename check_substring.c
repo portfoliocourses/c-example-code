@@ -1,4 +1,3 @@
-
 /*******************************************************************************
 *
 * Program: Check If A String Is A Substring Of Another String
