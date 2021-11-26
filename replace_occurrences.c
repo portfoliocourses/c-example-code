@@ -1,4 +1,3 @@
-#include <stdio.h>
 /*******************************************************************************
 *
 * Program: Replace All Occurrences Of A Value In An Array
@@ -11,6 +10,8 @@
 * Author: Kevin Browne @ https://portfoliocourses.com
 *
 *******************************************************************************/
+#include <stdio.h>
+
 void replace(int array[], int length, int value, int new);
 
 int main(void)
