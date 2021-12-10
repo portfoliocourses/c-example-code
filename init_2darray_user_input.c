@@ -4,7 +4,7 @@
 * 
 * Description: Example of how to initialize a 2D array with user input in C.
 *
-* YouTube Lesson: https://www.youtube.com/watch?v=kbPEydfeOG4 
+* YouTube Lesson: https://www.youtube.com/watch?v=p8-DGGL1Rk0 
 *
 * Author: Kevin Browne @ https://portfoliocourses.com
 *
