@@ -2,7 +2,7 @@
 *
 * Program: Swap Columns In A 2D Array 
 * 
-* Description: Swaps two columns in a 2D array in C.s
+* Description: Swaps two columns in a 2D array in C.
 *
 * YouTube Lesson: https://www.youtube.com/watch?v=-8esr14bCCI  
 *
