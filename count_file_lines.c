@@ -4,20 +4,27 @@
 * 
 * Description: Example of counting the number of lines in a file with C.
 *
-* YouTube Lesson: https://www.youtube.com/watch?v=kbPEydfeOG4 
+* YouTube Lesson: https://www.youtube.com/watch?v=AAF207cxbXk 
 *
 * Author: Kevin Browne @ https://portfoliocourses.com
 *
 *******************************************************************************/
 #include <stdio.h>
 
-int main(void)
+int main()
 {
   // file pointer variable for accessing the file
   FILE *file;
 
-  // open the file called file.txt in "read mode" so we can read from the file
-  file = fopen("file.txt", "r");
+  // stores the filename the user enters
+  char filename[1024];
+
+  // prompt the user to enter a filename, store it into filename
+  printf("Enter File: ");
+  scanf("%s", filename);
+  
+  // open the file with the given filename in read mode
+  file = fopen(filename, "r");
 
   // if there was an issue opening the file, notify the user and exit with an 
   // error status
@@ -26,21 +33,27 @@ int main(void)
     printf("Error opening file.\n");
     return 1;
   }
-  
-  // c will store each char in the file as we read them in one at a time, lines
-  // will store the running tally of how many lines we've encountered
+
+  // c will store each char in the file as we read them in one at a time, 
+  // current_line will store the running tally of how many lines we've found
+  int current_line = 1;
   char c;
-  int lines = 0;
+  do 
+  {
+    // read the next character from the file
+    c = fgetc(file);
 
-  // read in each char one at a time from the file and store it into c, once 
-  // fgetc() returns EOF for 'end of file' we stop, but so long as c is not 
-  // EOF we check if it is equal to the newline character and increment our 
-  // running tally of lines each time
-  while ((c = fgetc(file)) != EOF)
-    if (c == '\n') lines++;
-
-  // output the number of lines in the file
-  printf("Lines: %d\n", lines);
+    // if it's a newline, we've found another line
+    if (c == '\n') current_line++;
+  
+  // continue until the special end of file value is returned from fgetc
+  } while (c != EOF);
+  
+  // close the file since we are done with it
+  fclose(file);
+  
+  // print out the number of lines found
+  printf("lines: %d\n", current_line);
 
   return 0;
 }
