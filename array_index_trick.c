@@ -4,7 +4,7 @@
 * 
 * Description: A 'programming trick' to access array elements in C.
 *
-* YouTube Lesson: https://www.youtube.com/watch?v=RVqdK6WAjUI
+* YouTube Lesson: https://www.youtube.com/watch?v=9A5YDGSQy9o 
 *
 * Author: Kevin Browne @ https://portfoliocourses.com
 *
