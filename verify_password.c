@@ -66,5 +66,3 @@ bool verify_password(char *p)
   // if we couldn't invalidate the password it must be valid
   return true;
 }
-
-
