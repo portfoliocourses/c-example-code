@@ -5,7 +5,7 @@
 * Description: Example of replacing a substring (e.g. a word or phrase) in 
 * a string with another substring using C.
 *
-* YouTube Lesson: https://www.youtube.com/watch?v=hLVkrYEwwMM 
+* YouTube Lesson: https://www.youtube.com/watch?v=tGgl6EMZxLU 
 *
 * Author: Kevin Browne @ https://portfoliocourses.com
 *
@@ -21,12 +21,12 @@ int main()
   // test string
   char string[] = "Hate the sin, love the sinner";
   
-  // try to replace "the sin" with "the tin"
-  char *result = replace(string, "the sin", "the tin");
+  // try to replace the with that
+  char *result = replace(string, "the", "that");
   
   // output the before and after strings
-  printf("Before: %s\n", string);
-  printf("After: %s\n", result);
+  printf("before: %s\n", string);
+  printf("after: %s\n", result);
   
   // free the memory allocated for the after string
   free(result);
@@ -43,73 +43,107 @@ char *replace(char *before, char *oldsub, char *newsub)
   int new_length = strlen(newsub);
   int before_length = strlen(before);
   
-  // keeps track of the occurrences of the old substring in the before string
-  int occurrences = 0;
+  // stores pointer to the dynamically allocated after string
+  char *after;
   
-  // loop through the before string using i to keep track of the current index
-  int i = 0;
-  while (i < before_length)
+  // if the length of the old substring is the same as the new substring, 
+  // we can allocate space for the after string without doing any analysis 
+  // of the before string beforehand
+  if (old_length == new_length)
   {
-    // if we find the old substring in the before string at index i, then we 
-    // increment occurrences and skip over an old substring's worth of chars
-    if (strstr(&before[i], oldsub) == &before[i])
+    // allocate the same amount of space for the after string as the before
+    // string (the +1 is for the null terminator)
+    after = malloc((before_length + 1) * sizeof(char));
+  }
+  // otherwise we need to figure out how many times does the old substring 
+  // occur in the before string, and use that information to allocate enough
+  // space for the after string
+  else
+  {
+    // keeps track of occurrences of the old substring in the before string
+    int occurrences = 0;
+    
+    // use i as the current position in the before string and loop through 
+    // the string until we reach the end of the string
+    int i = 0;
+    while (i < before_length)
     {
-      occurrences++;
-      i += old_length;
+      // if the first occurrence of the old substring in the before string 
+      // from index i onwards occurs at index i, then we have found an 
+      // occurrence of the substring at index i
+      if (strstr(&before[i], oldsub) == &before[i])
+      {
+        // we increment the number of occurrences, and increment i by the 
+        // length of the old substring to skip over the old substring characters
+        occurrences++;
+        i += old_length;
+      }
+      // otherwise if we did not find an occurrence, increment i by 1 to check
+      // for an occurrence at the next index
+      else i++;
     }
-    // otherwise check for the old substring at the next index i
-    else i++;
+    
+    // calculate the difference between the new and old substring lengths
+    int sub_diff = new_length - old_length;
+
+    // use the before string's length as a starting point for the after 
+    // string's length
+    int after_length = before_length;
+    
+    // and now adjust the after string's length by the number of occurrences 
+    // in the before string multipled by the difference in length between 
+    // the new substring and the old substring (and keep in mind if the new 
+    // substring is less length than the old substring, it will be negative 
+    // and as appropriate after_length will be less than before_length)
+    after_length += occurrences * sub_diff;
+    
+    // allocate space for the after string, accounting for the null terminator
+    after = malloc((after_length + 1) * sizeof(char));
   }
   
-  // calculate the difference in size between the new substring and the old 
-  // substring... it's possible the old substring is either larger or smaller
-  // than the new substring, and this will effect whether we need less or 
-  // more space to be allocated
-  int sub_diff = new_length - old_length;
-  
-  // allocate space for the new string... using the before string's length as 
-  // a starting point, adjust the size by occurrences multipled by the 
-  // difference in length between the new and old substrings as determined above
-  char *after;
-  after = malloc(before_length + (occurrences * sub_diff));
-  
-  // build the new after string by using the variable j to keep track of our
-  // index in the before string and the variable i to keep track of our index
-  // in the new after string
-  i = 0;
+  // i will keep track of our current index in the before string
+  int i = 0;
+
+  // j will keep track of our current index in the after string that we will 
+  // now build
   int j = 0;
-
-  // keep looping through the before string until we reach the end
-  while (j < before_length)
+  
+  // again we loop through the before string, just as above, but now we 
+  // will build the after string as we do so
+  while (i < strlen(before))
   {
-    // if at index j in the before string, we find the old substring, write the 
-    // NEW substring to the new after string
-    if (strstr(&before[j], oldsub) == &before[j])
+    // if the first occurrence of the old substring in the before string 
+    // from index i onwards occurs at index i, then we have found an 
+    // occurrence of the substring at index i 
+    if (strstr(&before[i], oldsub) == &before[i])
     {
-      // writes the new substring into the new after string at index i
-      strcpy(&after[i], newsub);
+      // we now copy into the after string AT INDEX J the new substring
+      strcpy(&after[j], newsub);
 
-      // increment i by the length of the new substring (because we've just put
-      // it into the after char array)
-      i += new_length;
+      // we skip over old substring's amount of characters in the before string
+      i += old_length;
 
-      // increment j by the length of the old substring (because we can now
-      // skip over this many chars in the before string)
-      j += old_length;
+      // but we add the new substring's amount of characters to j, because the 
+      // length of the old and new substring's may be different... j may be less
+      // or more than i, but we'll use it to keep track of where we are writing 
+      // next into the after string
+      j += new_length;
     }
+    // if we did not find an occurrence of the old substring at index i in the 
+    // before string, we copy the next character from the before string into the
+    // after string (using the respective variables), and we increment the 
+    // the indexes by 1 to move onto the next element in each array
     else
     {
-      // if we didn't find the old substring in the before string at index j, 
-      // then we just copy one character from the before to after string
-      after[i] = before[j];
+      after[j] = before[i];
       i++;
       j++;
     }
   }
   
-  // put a NULL terminator at the end of our after string to end it
-  after[i] = '\0';
+  // put a null terminator at the end of the after string
+  after[j] = '\0';
   
-  // return a point to the after string
+  // return a pointer to the after string
   return after;
 }
