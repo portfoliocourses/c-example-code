@@ -1,0 +1,1 @@
+The files in this folder are meant to demonstrate how we can share a global variable across multiple files in C, see this YouTube tutorial for an explanation: https://youtu.be/Wqm1tSzmqkY 
