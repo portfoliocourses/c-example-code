@@ -3,7 +3,7 @@
 * Program: Share Global Variable
 * 
 * Description: Example of sharing a global variable across multiple files using
-* the extern keyword.
+* the extern keyword in C.
 *
 * YouTube Lesson: https://www.youtube.com/watch?v=Wqm1tSzmqkY 
 *
