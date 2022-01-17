@@ -1,6 +1,6 @@
 /*******************************************************************************
 *
-* Program: Share Gobal Variable
+* Program: Share Global Variable
 * 
 * Description: Example of sharing a global variable across multiple files using
 * the extern keyword.
