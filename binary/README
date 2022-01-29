@@ -1,0 +1,3 @@
+Please see the associated YouTube tutorial Binary File Access Introduction to help understand these files: https://www.youtube.com/watch?v=UtckqNKZFrA
+
+In the tutorial we demonstrate writing to and reading from binary files, as well as conduct a performance comparison with doing some of the equivalent work using a text file.
