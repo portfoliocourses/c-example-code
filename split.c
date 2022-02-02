@@ -124,22 +124,30 @@ char **split(char *string, char *seperators, int *count)
       j++;
     }
     
-    // add a null terminator on to the end of buffer to terminate the string
-    buffer[j] = '\0';
-    
-    // calculate how much space to allocate... we need to be able to store 
-    // the length of buffer (including a null terminator) number of characters
-    int to_allocate = sizeof(char) * (strlen(buffer) + 1);
-    
-    // allocate enough space using malloc, store the pointer into the strings 
-    // array of pointers at hte current string_index
-    strings[string_index] = malloc(to_allocate);
-    
-    // copy the buffer into this dynamically allocated space 
-    strcpy(strings[string_index], buffer);
-    
-    // assuming we really did read in a substring, advance string_index
-    if (j > 0) string_index++;
+    // only copy the substring into the array of substrings if we actually 
+    // read in characters with the above loop... it's possible we won't if 
+    // the string ends with a group of separator characters!
+    if (j > 0)
+    {
+      // add a null terminator on to the end of buffer to terminate the string
+      buffer[j] = '\0';
+
+      // calculate how much space to allocate... we need to be able to store 
+      // the length of buffer (including a null terminator) number of characters 
+      int to_allocate = sizeof(char) *
+                        (strlen(buffer) + 1);
+      
+      // allocate enough space using malloc, store the pointer into the strings 
+      // array of pointers at hte current string_index
+      strings[string_index] = malloc(to_allocate);
+      
+      // copy the buffer into this dynamically allocated space 
+      strcpy(strings[string_index], buffer);
+      
+      // advance string_index so we store the next string at the next index in 
+      // the strings array
+      string_index++;
+    }
   }
 
   // return our array of strings  
