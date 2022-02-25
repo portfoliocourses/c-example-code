@@ -5,7 +5,7 @@
 * Description: Example of using threads in C with the pthread.h libray (POSIX
 * thread library).
 *
-* YouTube Lesson: https://www.youtube.com/watch?v=wWWCIAbQu8U 
+* YouTube Lesson: https://www.youtube.com/watch?v=ldJ8WGZVXZk 
 *
 * Author: Kevin Browne @ https://portfoliocourses.com
 *
