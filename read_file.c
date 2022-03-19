@@ -72,7 +72,7 @@ char *read_file(char *filename)
   char *string = malloc(sizeof(char) * (length+1));
   
   // c will store each char we read from the string
-  char c;
+  int c;
 
   // i will be an index into the char array string as we read each char
   int i = 0;
