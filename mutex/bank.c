@@ -9,7 +9,7 @@
 // the initial balance is 0
 int balance = 0;
 
-// returns the balance (after a simulated 1/4 seond delay)
+// returns the balance (after a simulated 1/4 second delay)
 int read_balance()
 {
   usleep(250000);
