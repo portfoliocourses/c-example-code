@@ -3,7 +3,7 @@
 * Program: Get Char From File Portability Bug
 * 
 * Description: Example of bugs that can occur when reading chars from a file 
-* using a char variable and functions like fgetc().
+* using a char variable and functions like fgetc() in C.
 *
 * YouTube Lesson: https://www.youtube.com/watch?v=Zd5OThnCZ7w  
 *
