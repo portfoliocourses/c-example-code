@@ -91,6 +91,9 @@ char *read_file(char *filename)
   // terminate the string
   string[i] = '\0';
   
+  // close the file as we are now done with it
+  fclose(file);
+  
   // return a pointer to the dynamically allocated string on the heap
   return string;
 }
