@@ -5,7 +5,7 @@
 * Description: Example of using the #ifdef and #ifndef preprocessor directives 
 * for conditional compilation in C.
 *
-* YouTube Lesson: https://www.youtube.com/watch?v=BevPV5DrIxE 
+* YouTube Lesson: https://www.youtube.com/watch?v=rTNDAMyRpUs 
 *
 * Author: Kevin Browne @ https://portfoliocourses.com
 *
