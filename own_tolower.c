@@ -4,7 +4,7 @@
 *
 * Description: Demonstration of how to build our own tolower() function in C.
 *
-* YouTube Lesson: https://www.youtube.com/watch?v=XJ1KUC4vzoM
+* YouTube Lesson: https://www.youtube.com/watch?v=fsoohJiC4r4 
 *
 * Author: Kevin Browne @ https://portfoliocourses.com
 *
