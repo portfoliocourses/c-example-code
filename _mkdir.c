@@ -2,9 +2,9 @@
 *
 * Program: _mkdir() Demonstration
 *
-* Description: Example of using the _mkdir() in C to create a file system 
-* directory.  The function is available on Windows machines/compilers using 
-* the direct.h library.
+* Description: Example of using the _mkdir() function in C to create a file 
+* system directory.  The function is available on Windows machines/compilers 
+* using the direct.h library.
 *
 * YouTube Lesson: https://www.youtube.com/watch?v=VHsWVQXoTMI
 *
