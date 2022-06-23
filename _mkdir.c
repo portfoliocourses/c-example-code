@@ -21,8 +21,8 @@
 
 int main(void)
 { 
-  // Attempts to create a directory called test in the currenting working 
-  // directory, uses a relative path.  If the directory alread exists (perhaps
+  // Attempts to create a directory called test in the current working 
+  // directory, uses a relative path.  If the directory already exists (perhaps
   // because we run the program twice), an error will occur.
   int retval = _mkdir("test");
   
