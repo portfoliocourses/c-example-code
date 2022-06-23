@@ -2,9 +2,9 @@
 *
 * Program: _rmdir() Demonstration
 *
-* Description: Example of using the _rmdir() in C to remove a file system 
-* directory.  The function is available on Windows machines/compilers using 
-* the direct.h library.
+* Description: Example of using the _rmdir() function in C to remove a file 
+* system directory.  The function is available on Windows machines/compilers 
+* using the direct.h library.
 *
 * YouTube Lesson: https://www.youtube.com/watch?v=7g_w-cxgZB4
 *
