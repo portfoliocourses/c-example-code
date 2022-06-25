@@ -6,7 +6,7 @@
 * working directory of the executing program.  The function is available on 
 * Windows machines/compilers using the direct.h library.
 *
-* YouTube Lesson: https://www.youtube.com/watch?v=RzDqYPB0QzU
+* YouTube Lesson: https://www.youtube.com/watch?v=n2iSn6zGB5A 
 *
 * Author: Kevin Browne @ https://portfoliocourses.com
 *
