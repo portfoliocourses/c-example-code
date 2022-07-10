@@ -4,7 +4,7 @@
 * 
 * Description: Program to demonstrate how the sizeof operator works in C.
 *
-* YouTube Lesson: https://www.youtube.com/watch?v=IWhrWzRI_K4 
+* YouTube Lesson: https://www.youtube.com/watch?v=2wNc15926X4 
 *
 * Author: Kevin Browne @ https://portfoliocourses.com
 *
