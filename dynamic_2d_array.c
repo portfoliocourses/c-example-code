@@ -4,7 +4,7 @@
 * 
 * Description: Dynamically allocating a 2D array in C.
 *
-* YouTube Lesson: https://www.youtube.com/watch?v=2xifdFxMBqw
+* YouTube Lesson: https://www.youtube.com/watch?v=ZLc_OpzND2c 
 *
 * Author: Kevin Browne @ https://portfoliocourses.com
 *
