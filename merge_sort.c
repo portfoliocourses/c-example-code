@@ -85,11 +85,11 @@ void merge_sorted_arrays(int a[], int l, int m, int r)
   int i, j, k;
   
   // copy the left portion into the temp_left array
-  for (int i = 0; i < left_length; i++)
+  for (i = 0; i < left_length; i++)
     temp_left[i] = a[l + i];
   
   // copy the right portion into the temp_right array
-  for (int i = 0; i < right_length; i++)
+  for (i = 0; i < right_length; i++)
     temp_right[i] = a[m + 1 + i];
   
   // Use i to move through the indexes of temp_left, j to move through the 
