@@ -4,7 +4,7 @@
 * 
 * Description: Example of how to fill an array with unique random numbers in C.
 *
-* YouTube Lesson: https://www.youtube.com/watch?v=wnjYD_euSJQ 
+* YouTube Lesson: https://www.youtube.com/watch?v=wnjYD_euSJQ
 *
 * Author: Kevin Browne @ https://portfoliocourses.com
 *
