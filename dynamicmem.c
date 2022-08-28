@@ -4,7 +4,7 @@
 * 
 * Description: Examples of dynamic memory allocation in C.
 *
-* YouTube Lesson: https://www.youtube.com/watch?v=R0qIYWo8igs 
+* YouTube Lesson: https://www.youtube.com/watch?v=R0qIYWo8igs
 *
 * Author: Kevin Browne @ https://portfoliocourses.com
 *
