@@ -2,7 +2,7 @@
 *
 * Program: Create Your Own strspn() Function
 * 
-* Description: Example of how to create your own strspn() function in C.
+* Description: Example of how to create your own strspn() function in C. 
 *
 * YouTube Lesson: https://www.youtube.com/watch?v=oMXhxEpznoc 
 *
