@@ -3,8 +3,9 @@
 * Program: Create Your Own strchr() Function
 * 
 * Description: Example of creating our own version of the strchr() function in 
-* C found in the string.h library.  The function returns a pointer to the 
-* 
+* C found in the string.h library.  The function returns a pointer to the first
+* occurrence of a character in a string (or NULL if the character is not in 
+* the string).
 *
 * YouTube Lesson: https://www.youtube.com/watch?v=nxCnKVMGAFs 
 *
