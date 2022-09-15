@@ -4,7 +4,7 @@
 * 
 * Description: An example of a static function in C.
 *
-* YouTube Lesson: https://www.youtube.com/watch?v=zgbTMwZkoOk 
+* YouTube Lesson: https://www.youtube.com/watch?v=7Wx_o2p-6aY 
 *
 * Author: Kevin Browne @ https://portfoliocourses.com
 *
