@@ -2,7 +2,7 @@
 *
 * Program: Array copy
 * 
-* Description: Demonstration of creating a copy of an array on the heap.
+* Description: Demonstration of creating a copy of an array on the heap using C.
 *
 * YouTube Lesson: https://www.youtube.com/watch?v=aCR3SlfZTwg
 *
