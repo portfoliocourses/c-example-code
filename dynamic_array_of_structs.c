@@ -59,8 +59,8 @@ int main(int argc, char *argv[])
 
 
   /****************************************************************************
-      Dynamically allocate space for an array of structs and then using
-      realloc() to increase the length of the array.
+      Example of dynamically allocating space for an array of structs and then
+      using realloc() to increase the length of the array.
   ****************************************************************************/
 
   // Declare and initialize a length variable to keep track of the length of
@@ -126,39 +126,89 @@ int main(int argc, char *argv[])
 
   // Then we call realloc() to allocate space for this larger block of memory
   // to store the larger array.  The 2nd argument to realloc() is the size of
-  // the new block of memory.
+  // the new block of memory.  We multiply the new length of the array by the
+  // size in bytes that it takes to store a Point struct as given by
+  // sizeof(Point) to get the total number of bytes required.  We pass as a
+  // first argument to realloc() the pointer (memory address) of the block
+  // of memory that we wish to reallocate.  Sometimes the block of memory will
+  // be increased in size at its existing location in memory, in which case
+  // realloc() will return the same pointer (memory address) which we then store
+  // into array.  It's possible that the block of memory that's allocated cannot
+  // be expanding at its existing location in memory (perhaps it would require
+  // overwriting nearby memory that is not available).  In this case, realloc()
+  // may move the block of memory to a new location in memory, in which case it
+  // will return this new pointer (memory address) and we will store this into
+  // array to ensure that array continues to point to our dynamically allocated
+  // array on the heap.
   array = realloc(array, sizeof(Point) * length);
 
+  // After increasing the size of the array, it will have a 4th element, and
+  // we can set the members of that element
   array[3].x = 4;
   array[3].y = 4;
 
+  // Output the values of the members of the elements of the array that is
+  // now one element larger so we can see the difference
   printf("\n");
   printf("Array...\n");
   for (int i = 0; i < length; i++)
     printf("(%d, %d)\n", array[i].x, array[i].y);
   printf("\n");
 
+  // Free the dynamically allocated array to make the memory avaiable again
+  // and to prevent a memory leak.
   free(array);
 
+
+  /****************************************************************************
+      Example of dynamically allocating space for an array of structs, where
+      the struct members themselves contain pointers to dynamically allocated
+      memory.  This example is intended to illustrate that we need to free
+      the dynamically allocated memory for each of these struct member pointers,
+      otherwise we will have a memory leak.  To test out this example, wrap the
+      above example in multiline comments and then uncomment the code below.
+  ****************************************************************************/
+
   /*
+
+  // Declare and initialize a variable to keep track of the length of the
+  // dynamically allocated array.  Allocate space for an array with this
+  // length on the heap, using the same technique as previously outlined in
+  // the above example.
   int length = 3;
   Point *array = malloc(sizeof(Point) * length);
 
+  // Initialize the x and y members of the first struct in the array
   array[0].x = 1;
   array[0].y = 1;
+
+  // Dynamically allocate space for a char array of 10 characters using
+  // malloc() and have description store the pointer (memory address) for this
+  // dynamically allocate char array.  Note that a char = 1 byte on virtually
+  // all systems, so we can just pass 10 directly instead of using sizeof(char).
+  // Technically malloc doesn't allocate space for a number of bytes, it
+  // actually allocates space for a "number of char sized units", so even if
+  // a char wasn't 1 byte this would work!
   array[0].description = malloc(10);
+
+  // Use strcpy() to store a string into the dynamically allocated char array
+  // that description points to
   strcpy(array[0].description, "point 1");
 
+  // Do the same as the above for the 2nd struct in the array
   array[1].x = 2;
   array[1].y = 2;
   array[1].description = malloc(10);
   strcpy(array[1].description, "point 2");
 
+  // And again do the same as the above for the 3rd struct in the array
   array[2].x = 3;
   (*(array + 2)).y = 3;
   array[2].description = malloc(10);
   strcpy(array[2].description, "point 3");
 
+  // Output the values of the members of the structs in the array, including
+  // the description string.
   printf("\n");
   printf("Array...\n");
   for (int i = 0; i < length; i++)
@@ -168,10 +218,17 @@ int main(int argc, char *argv[])
   }
   printf("\n");
 
+  // We cannot JUST use free(array) to free the dynamically allocated memory
+  // in this case, because the structs THEMSELVES contain pointers to
+  // dynamically allocated memory.  We need to free THIS dynamically allocated
+  // memory as well, and we do so by looping through the array elements and
+  // freeing the block of memory allocated for each description.
   for (int i = 0; i < length; i++)
     free(array[i].description);
 
+  // We can then free the block of memory for our array of structs
   free(array);
+
   */
 
   return 0;
