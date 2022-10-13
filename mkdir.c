@@ -24,7 +24,7 @@ int main(void)
   // constants using the bitwise or operator:
   //   https://www.gnu.org/software/libc/manual/html_node/Permission-Bits.html
   //
-  // We could also use 0777 for the 2nd argument, in a ery similar style to the 
+  // We could also use 0777 for the 2nd argument, in a very similar style to the 
   // chmod terminal command: https://linuxcommand.org/lc3_man_pages/chmod1.html
   if (mkdir("test1", S_IRWXU | S_IRWXG | S_IRWXO ) == -1)
   {
