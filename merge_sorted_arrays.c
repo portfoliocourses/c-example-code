@@ -73,7 +73,7 @@ void merge(int a[], int m, int b[], int n, int r[])
   // if j < n that means b has elements remaining and we store those into r
   while (j < n)
   {
-    r[k] = b[i];
+    r[k] = b[j]; // index should be j instead of i so function works correctly with other test cases
     k++;
     j++;
   }
