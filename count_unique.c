@@ -5,7 +5,7 @@
 * Description: A program to count the number of unique elements in an array
 * using C.
 *
-* YouTube Lesson: https://www.youtube.com/watch?v=LCBWCtBr9c8
+* YouTube Lesson: https://www.youtube.com/watch?v=OH2s5jBQXvM 
 *
 * Author: Kevin Browne @ https://portfoliocourses.com
 *
