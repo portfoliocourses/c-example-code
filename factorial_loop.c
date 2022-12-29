@@ -5,7 +5,7 @@
 * Description: Program to calculate the factorial of a number using a loop 
 * with C.  Factorial numbers: https://en.wikipedia.org/wiki/Factorial
 *
-* YouTube Lesson: https://www.youtube.com/watch?v=WyvrdQxdQJI 
+* YouTube Lesson: https://www.youtube.com/watch?v=89aAkG68yoM 
 *
 * Author: Kevin Browne @ https://portfoliocourses.com
 *
