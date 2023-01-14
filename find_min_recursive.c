@@ -5,7 +5,7 @@
 * Description: Example of using recursion to find the smallest number in an 
 * array using C.
 *
-* YouTube Lesson: https://www.youtube.com/watch?v=iq9fiqIiLAc 
+* YouTube Lesson: https://www.youtube.com/watch?v=BrO7hfdC8So 
 *
 * Author: Kevin Browne @ https://portfoliocourses.com
 *
