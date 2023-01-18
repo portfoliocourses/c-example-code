@@ -4,7 +4,7 @@
 * 
 * Description: Examples of how to clear the standard input buffer in C.
 *
-* YouTube Lesson: https://www.youtube.com/watch?v=5SbJyxCqRN4 
+* YouTube Lesson: https://www.youtube.com/watch?v=N7-MueK2CX8 
 *
 * Author: Kevin Browne @ https://portfoliocourses.com
 *
