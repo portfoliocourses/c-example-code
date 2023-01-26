@@ -63,19 +63,46 @@ char *_strpbrk(const char *str1, const char *str2)
   // first string (outer loop), we attempt to find a matching char in the 
   // second string (inner loop).  And if we find a match, we return str1, the 
   // pointer to the char that str1 is currently pointing to.
+  
+  // temp will be used to loop through the characters of the second string 
+  // again and again in the inner loop
   const char *temp;
+  
+  // We use str1 to loop through the chars in the first string, incrementing
+  // it to point to the next char in the string with each loop iteration.  We
+  // stop the loop when str1 points to the null terminator that ends the
+  // string.
   while (*str1 != '\0')
   {
+    // Set temp to point to the first char in the second string
     temp = str2;
+    
+    // As with the outer loop and str1, we use temp in the inner loop to 
+    // check each char in the second string.  We stop the loop when temp 
+    // points to the null terminator that ends the (second) string.
     while (*temp != '\0')
     {
+      // If the character we're currently examining the first string matches
+      // the character we're currently examining in the second string, we
+      // return str1, the pointer to that character in the first string.  
       if (*str1 == *temp)
       {
+        // We type cast to char * as str1 is type const char * and the 
+        // function return type is char *
         return (char *) str1;
       }
+      
+      // Increment temp with each loop iteration to have it point to the next
+      // character in the second string.  Note that because we "go through" 
+      // the characters of the second string repeatedly with each run of the
+      // inner loop for each iteration of the outer loop, we need to keep 
+      // reseting temp to point to the first char of the string that str2 
+      // points to, as we do above with temp = str2.
       temp++;
     }
     
+    // Increment str1 with each loop iteration to have it point to the next
+    // character in the first string
     str1++;
   }
   
