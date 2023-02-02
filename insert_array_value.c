@@ -5,7 +5,7 @@
 * Description: Example of inserting a value into an array at a specific index 
 * using C.
 *
-* YouTube Lesson: https://www.youtube.com/watch?v=8C1X5VYjvvo 
+* YouTube Lesson: https://www.youtube.com/watch?v=nIJvKd5I1cY 
 *
 * Author: Kevin Browne @ https://portfoliocourses.com
 *
