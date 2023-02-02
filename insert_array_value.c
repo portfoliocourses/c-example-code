@@ -36,6 +36,14 @@ int main()
   printf("Enter Total Number Of Values To Store: ");
   scanf("%d", &total);
   
+  // We also can't store a total number of values that exceeds the capacity of
+  // the array so we exit with an error message and status in this case too.
+  if (total > MAX_CAPACITY)
+  {
+    printf("Error: Total exceeds max array capacity.\n");
+    return 1;
+  }
+  
   // A total less than 0 makes no sense so we can output an error message and
   // return 1, which will cause our program to exit with a status of 1 which
   // is a signal to the shell/terminal that something has gone wrong in the
@@ -43,14 +51,6 @@ int main()
   if (total < 0)
   {
     printf("Error: Total must be >= 0.\n");
-    return 1;
-  }
-  
-  // We also can't store a total number of values that exceeds the capacity of
-  // the array so we exit with an error message and status in this case too.
-  if (total > MAX_CAPACITY)
-  {
-    printf("Error: Total exceeds max array capacity.\n");
     return 1;
   }
   
@@ -130,7 +130,7 @@ int main()
   // decrement i with each loop iteration to "move over to the left", and stop
   // once we reach the insert_index where we wish to insert the value.  We 
   // will now have made room for the value to be inserted.
-  for (int i = total; i >= insert_index; i--)
+  for (int i = total; i > insert_index; i--)
   {
     array[i] = array[i-1];
   }
