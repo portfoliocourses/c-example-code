@@ -102,15 +102,47 @@ int main()
     return 1;
   }
   
+  //  Before inserting 2 at index 2...
+  //
+  //                     ___ ___ ___
+  //                    /  ↓/  ↓/  ↓
+  //  index:   0   1   2   3   4   5  ...
+  //  value:   9   8   7   6   5   ~  ...
+  //
+  //  total: 5
+  //
+  // If we have an array storing 5 total values: 9 8 7 6 5, it will look like
+  // the above.  If we want to insert the value 2 at the index 2, we need to
+  // shift over all the values stored at the index 2 onwards to the right by 
+  // one index in order to make room for 2.  
+  //
+  //  After insert the array should look like this...
+  //
+  //  index:   0   1   2   3   4   5  ...
+  //  value:   9   8   2   7   6   5  ...
+  //
+  //  total: 6  
+  // 
+
+  // Shift all values from the insert_index to total over by 1.  We do this by
+  // starting a counter variable i from the "right side" at the total index, 
+  // and copying the value stored one index to the left (as given by i-1).  We
+  // decrement i with each loop iteration to "move over to the left", and stop
+  // once we reach the insert_index where we wish to insert the value.  We 
+  // will now have made room for the value to be inserted.
   for (int i = total; i >= insert_index; i--)
   {
     array[i] = array[i-1];
   }
   
+  // Insert the value to be inserted at the index for it to be inserted
   array[insert_index] = insert_value;
   
+  // Increment the total now that we have inserted another value into the array
   total++;
   
+  // Output the values stored in the array separated by spaces so we can see the
+  // affect of inserting the value into the array.
   printf("\n");
   printf("array = ");
   for (int i = 0; i < total; i++)
