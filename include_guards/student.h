@@ -8,3 +8,5 @@ typedef struct
 } Student;
 
 #endif 
+
+// See course.h for an explanation of the include guard in this file.
