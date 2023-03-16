@@ -1,6 +1,6 @@
 /*******************************************************************************
 *
-* Program: Includ Guards Demonstration
+* Program: Include Guards Demonstration
 * 
 * Description: Example of how to use include guards in C.  Include guards 
 * prevent the double inclusion problem from occuring, see this for more 
