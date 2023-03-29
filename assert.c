@@ -23,7 +23,7 @@ void print_string(char *s);
 int main(void)
 {
   // if we dynamically allocate space for string, it won't be set to NULL
-  char *string = malloc(sizeof(char) * 10);
+  char *string = static_cast<char *>(malloc(sizeof(char) * 10));
   strcpy(string, "abc");
   
   // if we don't dynamically allocate space for a string, it will be NULL
