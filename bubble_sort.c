@@ -1,8 +1,8 @@
 /*******************************************************************************
 *
-* Program: Bubble Sort demonstration
+* Program: Bubble Sort Implementation
 * 
-* Description: Examples of implementing bubble sort in C.  See the Wikipedia
+* Description: Example of implementing bubble sort in C.  See the Wikipedia
 * article on Bubble Sort: https://en.wikipedia.org/wiki/Bubble_sort
 *
 * YouTube Lesson: https://www.youtube.com/watch?v=YqzNgaFQEh8 
@@ -41,8 +41,8 @@ void bubble_sort(int a[], int length)
   bool swapped = false;
   int i = 0;
 
-  // The outer loop will continue to attempt to sort the list so long as it 
-  // may still be out of order.  We know the loop might still be out of order
+  // The outer loop will continue to attempt to sort the array so long as it 
+  // may still be out of order.  We know the array might still be out of order
   // if a swap has taken place... if no swap has taken place, we know that the
   // array is sorted.  So we used the bool swapped to keep track of whether a 
   // swap has taken place, and to decide when to terminate the algorithm.
