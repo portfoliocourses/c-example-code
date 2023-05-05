@@ -30,7 +30,7 @@ int main(void)
   printf("c: '%c'\n", c);
 
   // The isprint() function will return a non-zero integer (true) if it is 
-  // passed an alphanumeric character and zero (false) otherwise. 
+  // passed a printable character and zero (false) otherwise. 
   if (isprint(c))
   {
     printf("character is printable.\n");
