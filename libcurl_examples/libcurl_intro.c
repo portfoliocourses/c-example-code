@@ -2,7 +2,7 @@
 *
 * Program: libcurl Library Introduction Example
 *
-* Description: Example of using the libcurl library in C to make an HTTP 
+* Description: Example of using the libcurl library in C to make an HTTP
 * request.
 *
 * YouTube Lesson: https://www.youtube.com/watch?v=mJVchgjkgL8 
