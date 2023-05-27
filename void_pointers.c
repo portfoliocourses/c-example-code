@@ -4,7 +4,7 @@
 *
 * Description: Examples of using void pointers in C.
 *
-* YouTube Lesson: https://www.youtube.com/watch?v=8vH6cUwKulE 
+* YouTube Lesson: https://www.youtube.com/watch?v=6BvbLygA6Og
 *
 * Author: Kevin Browne @ https://portfoliocourses.com
 *
@@ -14,6 +14,7 @@
 
 int main()
 {
+  // Declare test int and double variables.
   int a = 5;
   double b = 3;
 
@@ -63,11 +64,11 @@ int main()
   //
   //  We can use malloc to declare space for an array of 10 ints...
   //
-  //  int *array = malloc(sizeof(int) * 10);
+  //  int *a = malloc(sizeof(int) * 10);
   //
   //  Or we can use malloc to allocate space for a double...
   //
-  //  malloc(sizeof(double))
+  //  double * a = malloc(sizeof(double));
   //
   //  And it's OK too!
 
@@ -92,21 +93,36 @@ int main()
   // Non-void pointers support what's called pointer arithmetic, where we can
   // manipulate what a pointer is pointing to using arithmetic operations.
   char string[] = "String";
-   
+  
+  // The char pointer variable c will point to the 2nd character 't' in the
+  // string
   char *c = &string[1];
-   
+  
+  // We can dereference c to output 't'
   printf("%c\n", *c);
-   
+  
+  // We can use pointer arithmetic to "increment" the pointer and have it point
+  // to the next character (+ 1) in the string.  This is not adding the value 
+  // 1 to the pointer, it is incrementing the pointer by one char-sized unit 
+  // to point to the next char in memory.
   c = c + 1;
-   
+  
+  // We can dereference c and now output 'r'
   printf("%c\n", *c);
-   
+
+  // We can set our void pointer to point to the 2nd character 't' in the 
+  // string as well.  
   p = &string[1];
    
-  // Allowed in GNU C, not allowed in official C Standard
+  // In the official C standard we are not allowed to use pointer arithmetic 
+  // with void pointers, but GNU C and other C compilers allow it.  In GNU C 
+  // the pointer will be incremented by one char-sized unit (i.e. a byte in 
+  // practice), so p will point to 'r'
   p = p + 1;
    
-  // void pointers can be typecast to any type  
+  // We cannot directly dereference void pointers, but we could cost this void
+  // point to a char pointer (knowing that it is pointing to a char), and then 
+  // dereference THAT pointer to output the character 'r'. 
   printf("%c\n", *((char *) p));
  
   return 0;
