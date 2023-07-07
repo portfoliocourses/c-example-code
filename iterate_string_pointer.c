@@ -128,9 +128,9 @@ int main(void)
   // integer, which is considered true, and the loop will continue!
 
   // We could write a for-loop the same way... 
-  for (char *p = string; *p; p++)
+  for (char *p2 = string; *p2; p2++)
   {
-    printf("%c\n", *p);
+    printf("%c\n", *p2);
   }
   printf("\n");
   
