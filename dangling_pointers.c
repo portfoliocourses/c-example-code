@@ -5,14 +5,22 @@
 * Description: Examples related to dangling pointers in C.  Dangling pointers 
 * Wikipedia article: https://en.wikipedia.org/wiki/Dangling_pointer.
 *
-* YouTube Lesson: https://www.youtube.com/watch?v=n_e0y4a8IMg
+* YouTube Lesson: https://www.youtube.com/watch?v=HhJyLX6hM9M 
 *
 * Author: Kevin Browne @ https://portfoliocourses.com
 *
 *******************************************************************************/
 
+// Turns off the assert()
+#define NDEBUG
+
 #include <stdio.h>
 #include <stdlib.h>
+#include <assert.h>
+
+// A function-like macro that makes it easier to call safe_free_mem(), we 
+// can just supply the pointer variable as we do with free() this way.
+#define safe_free(ptr) safe_free_mem((void **) &(ptr))
 
 // Increments the value pointed to by ptr by 1.  Returns 0 if successful, -1 
 // otherwise in the case ptr is NULL.
@@ -32,21 +40,19 @@ int do_work(int *ptr)
 // A safe version of the free function that accesses the pointer that pointer
 // to a pointer parameter ptr points to and 1) frees the block of memory the 
 // pointer points to, 2) sets the pointer to NULL to prevent and dangling 
-// pointer.  The function returns 0 if successful, and -1 otherwise.
-int safe_free(void **ptr)
+// pointer.  
+void safe_free_mem(void **ptr)
 {
-  // If either the pointer parameter or the pointer that IT points to are 
-  // NULL, the error status -1 is returned
-  if (*ptr == NULL || ptr == NULL) return -1;
+  // It does not make sense for ptr to be set to NULL and it is undefined 
+  // behaviour to try to de-reference NULL so we use an assert() to 
+  // ensure ptr is not set to NULL.
+  assert(ptr);
   
   // Free the memory pointed to by the pointer that ptr points to
   free(*ptr);
   
   // Set the pointer that ptr points to to NULL so it points to nothing
   *ptr = NULL;
-  
-  // Return 0 if successful
-  return 0;
 }
 
 int main(void)
@@ -96,14 +102,15 @@ int main(void)
 
 
   // We could also create a "safe" version of the free function as we have done
-  // so above that sets the pointer variable to NULL for us.  We have made our 
-  // function return an error code if there is an issue, but there are other
-  // ways we could handle this (e.g. using assert()).
-  if (safe_free((void **) &ptr) != 0)
-  {
-    printf("Error freeing memory.\n");
-    return -1;
-  }
+  // so above that sets the pointer variable to NULL for us. 
+  //
+  // safe_free_mem((void **) &ptr);
+
+  // If we want to be able to call our safe free function by just passing the 
+  // pointer varible as we do with free(), we could use a function-like macro
+  // safe_free defined above to achieve this effect:
+  //
+  safe_free(ptr);
   
   // One advantage of setting pointers to NULL after free() is that often 
   // functions will defensively check if pointer parameters are NULL before 
