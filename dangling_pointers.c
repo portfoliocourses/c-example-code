@@ -33,7 +33,7 @@ int do_work(int *ptr)
 // to a pointer parameter ptr points to and 1) frees the block of memory the 
 // pointer points to, 2) sets the pointer to NULL to prevent and dangling 
 // pointer.  The function returns 0 if successful, and -1 otherwise.
-int safe_free(int **ptr)
+int safe_free(void **ptr)
 {
   // If either the pointer parameter or the pointer that IT points to are 
   // NULL, the error status -1 is returned
@@ -99,7 +99,7 @@ int main(void)
   // so above that sets the pointer variable to NULL for us.  We have made our 
   // function return an error code if there is an issue, but there are other
   // ways we could handle this (e.g. using assert()).
-  if (safe_free(&ptr) != 0)
+  if (safe_free((void **) &ptr) != 0)
   {
     printf("Error freeing memory.\n");
     return -1;
