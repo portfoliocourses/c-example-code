@@ -4,7 +4,7 @@
 * 
 * Description: Program to reverse a string using pointers in C.
 *
-* YouTube Lesson: https://www.youtube.com/watch?v=dp5z4p5na-Q
+* YouTube Lesson: https://www.youtube.com/watch?v=dad8Tnm1xYs 
 *
 * Author: Kevin Browne @ https://portfoliocourses.com
 *
@@ -93,9 +93,11 @@ void reverse_string(char *string)
   char temp;
 
   // Continually swap the corresponding characters at opposite ends of the 
-  // string until start and end meet in the middle and are equal (i.e. point
-  // to the same character).
-  while (start != end)
+  // string until start is no longer less than end.  We can reliably compare
+  // the pointers in this way using < because they both point to the same 
+  // array in memory. 
+  //
+  while (start < end)
   {
     // Swap the characters that start and end point to
     temp = *start;
@@ -104,21 +106,6 @@ void reverse_string(char *string)
     
     // increment start to point to the next character in the string
     start++;
-    
-    // If the string has an even amount of characters, there is no "middle 
-    // character" for start and end to meet at, so if we increment start and
-    // decrement end they will "pass by each other" at the middle.
-    //
-    //           <--end
-    //              |
-    // e.g.   a  b  c  d
-    //           |  
-    //       start-->
-    //
-    // So we check if after increment start it equals end, and stop the loop 
-    // if so, to handle this situation.
-    //
-    if (start == end) break;
     
     // decrement end to point to the previous character in the string
     end--;
