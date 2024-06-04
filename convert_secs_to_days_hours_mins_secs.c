@@ -5,7 +5,7 @@
 * Description: Program to convert a total number of seconds into the equivalent
 * number of days, hours, minutes and seconds using C.
 *
-* YouTube Lesson: https://www.youtube.com/watch?v=LaVEDKSTYQs 
+* YouTube Lesson: https://www.youtube.com/watch?v=bQgRTianPRI 
 *
 * Author: Kevin Browne @ https://portfoliocourses.com
 *
