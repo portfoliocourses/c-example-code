@@ -10,6 +10,8 @@
 *
 *******************************************************************************/
 
+#include <stdio.h>
+
 void print_positive(int array[], int length);
 
 int main(void)
