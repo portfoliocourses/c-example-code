@@ -43,7 +43,7 @@ int main(void)
   // counter variable i which goes from 0 to 1 to length-1 (i.e. 8 in the case
   // of this array) with each loop iteration.  So with each iteration of the 
   // loop we use i to access and check if the next number in the array is 
-  // even, and only if it is do we print the number our.  We use \n to print 
+  // even, and only if it is do we print the number out.  We use \n to print 
   // each even number on a new line.
   //
   for (int i = 0; i < length; i++)
