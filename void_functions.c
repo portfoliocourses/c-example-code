@@ -4,7 +4,7 @@
 *
 * Description: Example of a void function in C.
 *
-* YouTube Lesson: https://www.youtube.com/watch?v=GcAkeHpcX_Q
+* YouTube Lesson: https://www.youtube.com/watch?v=jOoiVmVUy-Q
 *
 * Author: Kevin Browne @ https://portfoliocourses.com
 *
