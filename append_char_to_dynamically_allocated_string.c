@@ -5,7 +5,7 @@
 * Description: Program to append a character to a dynamically allocated string 
 * using C.
 *
-* YouTube Lesson: https://www.youtube.com/watch?v=wmZpUCSI358 
+* YouTube Lesson: https://www.youtube.com/watch?v=hZeNI901HwA 
 *
 * Author: Kevin Browne @ https://portfoliocourses.com
 *
@@ -70,6 +70,9 @@ int main(void)
   
   // Output the string to confirm the character has been appended
   printf("%s\n", buffer);
+
+  // Free the dynamically allocated memory
+  free(buffer);
   
   return 0;
 }
