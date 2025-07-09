@@ -20,7 +20,7 @@ int main(void)
 {
   // Two test strings with the characters 'o' and 'r' common to both
   char str1[] = "Portfolio";
-  char str2[] = "ABC";
+  char str2[] = "Courses";
     
   // Find the number of characters common to both strings (2)
   int common_count = count_common(str1, strlen(str1), str2, strlen(str2));
